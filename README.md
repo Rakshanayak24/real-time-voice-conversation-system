@@ -6,7 +6,7 @@ Built from scratch without relying on external voice AI platforms.
 ---
 
 ## 🏗️ Architecture Overview
-
+```bash
 
 ┌──────────┐ ┌─────────────────┐ ┌──────────────────────┐
 │ Microphone│ ──▶ │ SpeechRecognition│ ──▶ │ Session Orchestrator │
@@ -18,7 +18,7 @@ Built from scratch without relying on external voice AI platforms.
 │ Speaker │
 │ (WebAudio)│
 └──────────┘
-
+```
 
 - **Browser STT/TTS** handles audio locally.
 - **Edge Function** streams LLM responses in real-time.
@@ -56,10 +56,11 @@ Built from scratch without relying on external voice AI platforms.
 - Minimal buffer delay (~200–400ms).
 
 ### 4. Turn-Taking State Machine
+```bash
 IDLE → LISTENING → PROCESSING → SPEAKING → LISTENING
                    │
               (Interrupt → LISTENING)
-
+```
 
 ---
 
