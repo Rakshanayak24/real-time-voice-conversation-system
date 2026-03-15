@@ -109,11 +109,6 @@ VITE_SUPABASE_PUBLISHABLE_KEY=your-anon-key
 ```
 Replace your-project and your-anon-key with your own Supabase project values.
 
-#  Deploy the edge function
-```bash
-npx supabase login
-npx supabase functions deploy voice-chat
-```
 # Start development server
 ```bash
 npm run dev
